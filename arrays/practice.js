@@ -19,7 +19,9 @@ var arr = [10,20,30];
 
 //Code Here
 
-
+const first = function(arr){
+  return arr[0];
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -34,6 +36,9 @@ var arr = [40,50,60];
 
 //Code Here
 
+function last(arr){
+  return arr[arr.length -1];
+}
 
 
 ////////// PROBLEM 3 //////////
@@ -49,6 +54,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 //Code Here
 
+const looper = function(family) {
+  for (let i = 0; i < family.length; i++) {
+    alert(family[i]);
+  }
+}
 
 
 ////////// PROBLEM 4 //////////
