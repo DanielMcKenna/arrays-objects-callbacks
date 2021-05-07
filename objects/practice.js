@@ -16,6 +16,13 @@
 
 //Code here
 
+let me = {
+  name:"Dan",
+  age:28
+}
+
+alert(me.name);
+
 ////////// PROBLEM 2 //////////
 
 /*
