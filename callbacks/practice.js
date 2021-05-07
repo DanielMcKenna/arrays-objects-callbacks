@@ -29,6 +29,10 @@
 
 // Code Here 
 
+const first = function(arr, myfunction) {
+   myfunction(arr[0])
+}
+
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 
@@ -49,6 +53,10 @@ first(names, function(firstName){
 
 //Code Here
 
+const last = function(arr, myfunction) {
+  myfunction(arr[arr.length - 1])
+}
+
 // Do not edit the code below.
 last(names, function(lastName){
   console.log('The last name in names is ' + lastName);
@@ -66,6 +74,10 @@ last(names, function(lastName){
 */
 
 //Code Here
+
+const multiply = function(num1, num2, myFunction) {
+  myFunction(num1 * num2)
+}
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -85,6 +97,10 @@ multiply(4, 3, function(answer){
 */
 
 //Code Here 
+
+const contains = function(arr, name, myFunction) {
+  myFunction(arr.includes(name));
+}
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -107,6 +123,18 @@ contains(names, 'Colt', function(result){
 
 //Code Here
 
+const uniq = function(arr, myFunction) {
+  for(let i = 0; i < arr.length; i++) {
+
+    for(let j = i + 1; j < arr.length; j++) {
+      if(arr[i] === arr[j]){
+        arr.splice(j, 1);
+      }
+    }
+  }
+  myFunction(arr)
+}
+
 // Do not edit the code below.
 uniq(names, function(uniqArr){
   console.log('The new names array with all the duplicate items removed is ', uniqArr);
@@ -123,6 +151,11 @@ uniq(names, function(uniqArr){
 */
 
 //Code Here 
+
+const each = function(arr, cb) {
+
+cb(arr.forEach(current), arr.forEach(index)) 
+}
 
 // Do not edit the code below.
 each(names, function(item, indice){
